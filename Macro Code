@@ -1,0 +1,241 @@
+-- Plants vs Brainrots Macro - WITH 1-SECOND WAITS
+hs.application.enableSpotlightForNameSearches(true)
+
+-- State variables
+local macroRunning = false
+local macroTimer = nil
+
+function ensureRobloxActive()
+    local robloxApp = hs.application.get("Roblox")
+    if robloxApp then
+        robloxApp:activate()
+        hs.timer.usleep(1500000)
+        return true
+    else
+        hs.alert.show("❌ Roblox not running!", 3)
+        return false
+    end
+end
+
+-- Main macro sequence
+function executeMacroSequence()
+    if not ensureRobloxActive() then return end
+    
+    hs.alert.show("🔄 Running macro sequence...", 2)
+    
+    -- EXACT SEQUENCE - DO NOT MODIFY
+    hs.eventtap.keyStroke({}, "\\")           -- 1. \ Key
+    hs.timer.usleep(1000000)                  -- Wait 1 second
+    
+    hs.eventtap.keyStroke({}, "up")           -- 2. Up arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "up")           -- 3. Up arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "up")           -- 4. Up arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "right")        -- 5. Right arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 6. Return Key
+    hs.timer.usleep(3000000)                  -- Wait 3 seconds
+    
+    hs.eventtap.keyStroke({}, "\\")           -- 7. \ Key
+    hs.timer.usleep(1000000)
+    hs.eventtap.keyStroke({}, "e")            -- 8. E Key
+    hs.timer.usleep(1000000)
+    hs.eventtap.keyStroke({}, "\\")           -- 9. \ Key
+    hs.timer.usleep(1000000)
+    
+    hs.eventtap.keyStroke({}, "up")           -- 10. Up arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "right")        -- 11. Right arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 12. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 13. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 14. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 15. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 16. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 17. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 18. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 19. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 20. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 21. Return Key
+    hs.timer.usleep(300000)
+    
+    hs.eventtap.keyStroke({}, "down")         -- 22. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 23. Return Key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 24. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 25. Return Key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 26. Down Arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 27. Return Key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 28. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 29. Return Key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 30. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 31. Return key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 32. Down Key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 33. Return Key
+    hs.timer.usleep(300000)
+    
+    -- 34. Up key 14 times
+    for i = 1, 14 do
+        hs.eventtap.keyStroke({}, "up")
+        hs.timer.usleep(300000)
+    end
+    
+    hs.eventtap.keyStroke({}, "down")         -- 35. Down key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "right")        -- 36. Right arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 37. Return key
+    hs.timer.usleep(1000000)
+    
+    hs.eventtap.keyStroke({}, "\\")           -- 38. \ Key
+    hs.timer.usleep(1000000)
+    
+    -- 39. A Key 12 Times
+    for i = 1, 12 do
+        hs.eventtap.keyStroke({}, "a")
+        hs.timer.usleep(50000)
+    end
+    hs.timer.usleep(1000000)
+    
+    hs.eventtap.keyStroke({}, "e")            -- 40. E key
+    hs.timer.usleep(1000000)
+    hs.eventtap.keyStroke({}, "\\")           -- 41. \ Key
+    hs.timer.usleep(1000000)
+    
+    hs.eventtap.keyStroke({}, "up")           -- 42. Up key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "right")        -- 43. Right key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 44. Down key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 45. Down key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 46. Return key
+    hs.timer.usleep(300000)
+    
+    hs.timer.usleep(1000000)                  -- 1-second wait between 46-47
+    
+    hs.eventtap.keyStroke({}, "return")       -- 47. Return key
+    hs.timer.usleep(300000)
+    
+    hs.timer.usleep(1000000)                  -- 1-second wait between 47-48
+    
+    hs.eventtap.keyStroke({}, "return")       -- 48. Return key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 49. Return key
+    hs.timer.usleep(300000)
+    
+    hs.timer.usleep(1000000)                  -- 1-second wait between 49-50
+    
+    hs.eventtap.keyStroke({}, "return")       -- 50. Return key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 51. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 52. Return key
+    hs.timer.usleep(300000)
+    
+    hs.timer.usleep(1000000)                  -- 1-second wait between 52-53
+    
+    hs.eventtap.keyStroke({}, "return")       -- 53. Return key
+    hs.timer.usleep(300000)
+    
+    hs.timer.usleep(1000000)                  -- 1-second wait between 53-54
+    
+    hs.eventtap.keyStroke({}, "return")       -- 54. Return key
+    hs.timer.usleep(300000)
+    
+    hs.timer.usleep(1000000)                  -- 1-second wait between 54-55
+    
+    hs.eventtap.keyStroke({}, "return")       -- 55. Return key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 56. Down key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 57. Down key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 58. Return key
+    hs.timer.usleep(300000)
+    
+    hs.timer.usleep(1000000)                  -- 1-second wait between 58-59
+    
+    hs.eventtap.keyStroke({}, "return")       -- 59. Return key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "down")         -- 60. Down key
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 61. Return key
+    hs.timer.usleep(300000)
+    
+    -- 62. Up arrow 5 times
+    for i = 1, 5 do
+        hs.eventtap.keyStroke({}, "up")
+        hs.timer.usleep(300000)
+    end
+    
+    hs.eventtap.keyStroke({}, "down")         -- 63. Down arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "right")        -- 64. Right arrow
+    hs.timer.usleep(300000)
+    hs.eventtap.keyStroke({}, "return")       -- 65. Return key
+    hs.timer.usleep(1000000)
+    
+    hs.eventtap.keyStroke({}, "\\")           -- 66. \ key
+    hs.timer.usleep(500000)
+    
+    hs.alert.show("✅ Sequence complete!", 2)
+end
+
+-- Control functions
+function startMacro()
+    if macroRunning then
+        stopMacro()
+        return
+    end
+    
+    macroRunning = true
+    hs.alert.show("🚀 MACRO STARTED!", 3)
+    
+    -- Run first sequence immediately
+    executeMacroSequence()
+    
+    -- Then run every 5 minutes (300 seconds)
+    macroTimer = hs.timer.doEvery(300, executeMacroSequence)
+end
+
+function stopMacro()
+    macroRunning = false
+    if macroTimer then
+        macroTimer:stop()
+        macroTimer = nil
+    end
+    hs.alert.show("⏹️ MACRO STOPPED", 2)
+end
+
+-- Hotkeys
+hs.hotkey.bind({"cmd", "alt"}, "1", startMacro)
+hs.hotkey.bind({"cmd", "alt"}, "2", stopMacro)
+hs.hotkey.bind({"cmd", "alt"}, "3", executeMacroSequence)
+
+-- Initial alert
+hs.timer.doAfter(2, function()
+    hs.alert.show("🌱 MACRO READY!\n\nCmd+Option+1 = Start Macro\nCmd+Option+2 = Stop Macro\nCmd+Option+3 = Test Single Sequence", 6)
+end)
